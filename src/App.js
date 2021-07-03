@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import About from './components/About';
-import Experience from './components/Experience';
+// import Experience from './components/Experience';
 import Education from './components/Education';
-import Certificate from './components/Certificate';
-import Skills from './components/Skills';
+// import Certificate from './components/Certificate';
+// import Skills from './components/Skills';
 import logo from './logo192.png';
 
 class App extends Component {
