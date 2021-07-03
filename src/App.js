@@ -4,40 +4,22 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Certificate from './components/Certificate';
 import Skills from './components/Skills';
+import logo from './logo192.png';
 
 class App extends Component {
   render() {
 
     const person = {
-      avatar: 'https://gndx.co/wp-content/uploads/2017/05/oscar_barajas.jpg',
       name: 'Jiayuan Sun',
-      profession: 'FrontEnd Developer',
-      bio: '❤ Front end Developer - Growth Hacker at @CityDrive, CSS Lover, Geek & Blogger. Better known as The Grumpy Developer.',
-      address: 'Guadalajara, Jalisco México.',
+      profession: 'About Me',
+      bio: 'We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard.',
+      address: 'Chengdu, Sichuan,',
       social: [
-        {name: 'facebook', url: 'https://facebook.com/oscarbarajastavares'},
-        {name: 'twitter', url: 'https://twitter.com/gndx'},
-        {name: 'github', url: 'https://github.com/gndx'},
-        {name: 'linkedin', url: 'https://www.linkedin.com/in/oscarbarajas/'}
-      ],
-      experience: [
-        {jobTitle: 'FrontEnd', company: 'CityDrive', startDate: 'Jan 2016', endDate: 'Present', jobDescription: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'},
-        {jobTitle: 'Backend', company: 'DragonsDev', startDate: 'September 2014', endDate: 'Jan 2016', jobDescription: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'},
+        {name: 'github', url: 'https://github.com/IntelligentSun'},
       ],
       education: [
-        {degree: 'Maestria Atomica', institution: 'MIT', startDate: 'Jan 2016', endDate: 'Jan 2017', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'},
-        {degree: 'Ingenieria Atomica', institution: 'Harvard', startDate: 'Jan 2014', endDate: 'Decenber 2015', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'},
+        {degree: 'Master of Science', institution: 'University of Electronic Science and Technology of China', startDate: 'Jan 2020', endDate: 'Jan 2020', description: 'Computer Science and Technology'},
       ],
-      certificate: [
-        {name: 'FrontEnd Developer', institution: 'Platzi', date: 'Jan 2015', description: 'Aenean commodo ligula eget dolor. Aenean massa.' },
-        {name: 'Backend Developer', institution: 'Platzi', date: 'Jan 2016', description: 'Aenean commodo ligula eget dolor. Aenean massa.' }
-      ],
-      skills: [
-        {name: 'HTML5', percentage: '95%'},
-        {name: 'CSS', percentage: '90%'},
-        {name: 'JavaScript', percentage: '75%'},
-        {name: 'PHP', percentage: '50%'}
-      ]
     };
 
     return (
@@ -45,7 +27,7 @@ class App extends Component {
         <div className='wrapper'>
           <div className='sidebar'>
             <About
-              avatar={person.avatar}
+              avatar={logo}
               name={person.name}
               profession={person.profession}
               bio={person.bio}
@@ -55,10 +37,7 @@ class App extends Component {
 
           <div className='content-wrapper'>
               <div className='content'>
-                <Experience experience={person.experience} />
                 <Education education={person.education} />
-                <Certificate certificate={person.certificate} />
-                <Skills skills={person.skills} />
               </div>
           </div>
 
